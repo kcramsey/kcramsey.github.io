@@ -1,0 +1,475 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@font-face {
+    font-family: NoCurves;
+    src: url(../fonts/no-curves-boustrophedon.ttf) format('truetype');
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {background-color:white; height:100%; padding:0; margin:0; font-family: 'Alegreya Sans SC', Helvetica, sans-serif; font-weight:400; font-size:60%;}
+a {text-decoration: none;}
+span {display:block;}
+.fade {opacity:0;}
+
+.wrapper { height:100%; display:flex; flex-direction:row;}
+header {display:flex; opacity:1; justify-content:center; height:100%; background-color:white; flex:1; z-index:1000;}
+nav {display:flex; flex-flow: column nowrap; align-items:flex-start; position:fixed;}
+.main {flex:16;}
+
+ul {text-decoration:none; padding:10px;}
+li {list-style-type:none; writing-mode: vertical-lr; transform: rotate(180deg); transform-origin: center center; font-size:2em; padding:10px; color:#787878; text-transform:uppercase;}
+li>a {color:#787878;}
+li>a:visited {color:#787878}
+li>a:hover {color:#7a999e}
+li>a:active {color:#7a999e}
+nav img {width:15px; transform: rotate(90deg);}
+
+.hero {padding:0; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:url(../img/skanonh-center-belt-hero-effect.jpg); background-size:cover; color:#fff; text-align:center;}
+
+.plan-your-visit {display:flex;}
+.plan-your-visit div {flex:1; display:flex; flex-direction:column; justify-content:center; min-height:170px;}
+.plan-your-visit div:nth-child(-n+3) h2{font-weight:normal; color: #7a999e; font-size:4em; line-height:1em; font-weight:normal; text-transform:lowercase;}
+.plan-your-visit div p{font-size:3em; line-height:0; color:#787878; text-transform:lowercase;}
+.plan-your-visit div:last-of-type {width:100%; background-color:#802684;}
+.plan-your-visit div:last-of-type a {font-family: NoCurves; color:white; font-size:4em; font-weight:normal; text-transform:uppercase; padding-left:50px;}
+.plan-your-visit div:last-of-type h2 {display:flex;}
+.plan-your-visit div h2 span {justify-content:center;}
+.plan-your-visit i {margin-left:10px; -webkit-text-stroke: 2.5px #802684;}
+.plan-your-visit div:last-of-type a:hover {color:#b562b7;}
+
+.featured-one .image { background:url(../img/skanonh-clothes-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.featured-two .image { background:url(../img/skanonh-native-art-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.featured-three .image { background:url(../img/skanonh-lodging-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+
+.featured-gallery {position: relative; display: flex;}
+.featured-gallery article {height:400px; flex:1;}
+.featured { position:relative; overflow:hidden; display:flex;}
+.featured .image { transition:.25s; position:absolute; left:0; top:0; width:100%; height:100%; }
+.featured .text { display:flex; transition:.25s; opacity:0;  position:absolute; left:0; top:0; width:100%; height:100%; color:#7a999e; background-color:white; display:flex; flex-direction:column; justify-content:center; font-size: .8em; line-height: .1em; text-transform:lowercase; justify-content: flex-end;}
+.featured:hover .image  { transform:scale(1.03); }
+.featured:hover .text { opacity:.9;}
+.featured .text h1 {order:2; font-weight:normal; font-size:4.2em; padding-left: 25px; padding-bottom:25px;}
+.featured .text h2 {order:1; font-size:3.8em; padding-left: 25px;}
+
+.what-is-skanonh {display:flex;}
+.what-is-skanonh>div:first-of-type {flex:1; background-color:#802684; display:flex; align-items:flex-end;}
+.what-is-skanonh div:last-of-type {flex:2;}
+.what-is-skanonh h1 {justify-content: flex-end; padding-left:30px; font-family: NoCurves; color: white; font-size: 7em; font-weight: normal; text-transform: uppercase;}
+.what-is-skanonh h2 {margin-top:50px;}
+
+footer {display:flex; flex-wrap:wrap; border-top: 2px solid #802684; margin-top:70px;}
+footer .hours {flex:33.33%; margin-top:20px;}
+footer .hours h2 {color: #787878; font-size: 3em; font-weight: normal; text-transform: lowercase;}
+footer .hours p{color:#787878; font-size:2.5em; line-height:.5em; font-weight: normal; text-transform: lowercase; }
+footer .social {flex:2; height: 50px; width: 100%; margin-top:35px; border-top: .01px solid #dcdcc8}
+footer .copyright {flex: 1; height: 50px; width: 100%; margin-top: 35px; border-top: .01px solid #dcdcc8; font-weight:1.7em;}
+footer a {font-size:4em; padding-right:10px; color:#787878;}
+footer a:hover {color:#7a999e;}
+
+
+/* ABOUT */
+.hero-about {padding:0; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:url(../img/saint-marie-mission-view.jpg); background-size:cover; color:#fff; text-align:center;}
+
+.about-skanonh {display:flex; flex-direction:row;}
+.about-skanonh div:first-of-type {flex:1; font-size: 5em; font-family:'NoCurves'; text-transform:uppercase; color:#802684; }
+.about-skanonh div:first-of-type h2 {margin-bottom:0;}
+.about-skanonh div:last-of-type {flex:2; display:flex; display: flex; justify-content: center; flex-direction: column; background-color:#802684; color:white; font-size:3em; font-family:'Alegreya Sans'; font-weight:300; line-height:1.7em;}
+.about-skanonh div:last-of-type p {padding:20px;}
+.about-skanonh div:last-of-type p:last-of-type {margin-top:-30px;}
+
+.about-gallery {display:flex; flex-direction:row;}
+.about-gallery div {height:300px; flex:1;;}
+.about-gallery .image {height:100%; width:100%;}
+.about-one .image { background:url(../img/skanonh-sign-outdoors.jpg); background-size:cover; background-repeat: no-repeat; }
+.about-two .image { background:url(../img/skanonh-canoe.jpg); background-size:cover; background-repeat: no-repeat; }
+.about-three .image { background:url(../img/skanonh-mission-saint-marie.jpg); background-size:cover; background-repeat: no-repeat; }
+
+
+/* EXHIBITS */
+.hero-exhibit {padding:0; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:url(../img/skanonh-exhibits-hero.jpg); background-size:cover; color:#fff; text-align:center;}
+
+.exhibit-two .image { background:url(../img/skanonh-canoe-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.exhibit-three .image { background:url(../img/skanonh-clothes-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.exhibit-four .image { background:url(../img/skanonh-mask-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.exhibit-five .image { background:url(../img/skanonh-advertisements-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+.exhibit-six .image { background:url(../img/skanonh-bowl-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+
+.exhibit-gallery {position: relative; display: flex; flex-wrap:wrap;}
+.exhibit-gallery article {height:400px; flex:33.333%;}
+.exhibit-gallery:nth-child(5) {flex:;}
+.exhibit { position:relative; overflow:hidden; display:flex;}
+.exhibit .image { transition:.25s; position:absolute; left:0; top:0; width:100%; height:100%; }
+.exhibit .text { display:flex; transition:.25s; opacity:0;  position:absolute; left:0; top:0; width:100%; height:100%; color:#7a999e; background-color:white; display:flex; flex-direction:column; justify-content:center; font-size: .8em; line-height: .1em; text-transform:lowercase; justify-content: flex-end;}
+.exhibit:hover .image  { transform:scale(1.03); }
+.exhibit:hover .text { opacity:.9;}
+.exhibit .text h1 {order:2; font-weight:normal; font-size:4.2em; padding-left: 25px; padding-bottom:25px;}
+
+.exhibit-gallery article:first-of-type h2 {color:#802684; color: #802684; font-family: NoCurves; text-transform: uppercase; font-size: 10em; align-self:flex-end; margin:0; font-weight:normal;}
+
+.plan-your-visit-exhibit {display:flex;}
+.plan-your-visit-exhibit div {display:flex; flex-direction:column; justify-content:center; min-height:170px;}
+.plan-your-visit-exhibit div:first-of-type {flex: 1; order:2;}
+.plan-your-visit-exhibit div:last-of-type {flex:2; order:1; background-color:#802684}
+.plan-your-visit-exhibit div:nth-child(-n+3) h2{color: white; font-size: 8em; line-height: 1em; font-weight: normal; text-transform: lowercase; padding-left: 30px;}
+.plan-your-visit-exhibit div p{font-size:3em; line-height:0; color:#787878; text-transform:lowercase;}
+.plan-your-visit-exhibit div:first-of-type {width:100%;}
+.plan-your-visit-exhibit div:first-of-type a {font-family: NoCurves; color:#802684; font-weight:normal; text-transform:uppercase;}
+.plan-your-visit-exhibit div:first-of-type h2 {display:flex;}
+.plan-your-visit-exhibit div h2 span {justify-content:center;}
+.plan-your-visit-exhibit i {margin-left:10px; -webkit-text-stroke: 2.5px white;}
+.plan-your-visit-exhibit div:first-of-type a:hover {color:#b562b7;}
+
+/* EVENTS */
+
+.hero-events {padding:0; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:url(../img/skanonh-event-hero.jpg); background-size:cover; color:#fff; text-align:center;}
+
+.skanonh-events .event-one div { background:url(../img/skanonh-laduke-event.jpg); background-size:cover; background-repeat: no-repeat; }
+.skanonh-events .event-two div { background:url(../img/book-signing-event.jpg); background-size:cover; background-repeat: no-repeat; }
+.skanonh-events .event-three div { background:url(../img/skanonh-lacrosse-event.jpg); background-size:cover; background-repeat: no-repeat; }
+
+.skanonh-events .event {display:flex; flex-direction:row;}
+.skanonh-events div {flex:1; order:2; width:100%;}
+.skanonh-events article {flex:2; order:1; width:100%; background-color:white; border-bottom: 1px solid #dcdcdc;}
+.skanonh-events h1 {font-size:5em; text-transform:lowercase; color:#802684; line-height:1; padding-right:20px;}
+.skanonh-events p {font-size:2.5em; padding-right:25px;}
+.skanonh-events a {font-size:1.5em; text-transform:lowercase; color:#802684;}
+.skanonh-events i {margin-left:10px; -webkit-text-stroke: 1px white;}
+.skanonh-events a:hover {color:#7a999e;}
+
+/* Responsive */
+@media screen and (max-width:1000px) {
+    .wrapper { flex-direction:column;}
+    nav {position:fixed; background-color:white; width:100%;}
+    ul {flex-wrap: wrap;}
+    li {display:inline; writing-mode: horizontal-tb; transform: rotate(0deg);}
+    nav img {width:15px; transform: rotate(0deg);}
+    header {background-color:white;}
+
+    .plan-your-visit div:last-of-type span {display:inline-block;}
+
+    .featured-one .image { background:url(../img/skanonh-clothes-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+    .featured-two .image { background:url(../img/skanonh-native-art-exhibit.jpg); background-size:cover; background-repeat: no-repeat; }
+    .featured-three .image { background:url(../img/skanonh-lodging-exhibit.jpg); background-size:cover;  background-repeat: no-repeat;}
+
+    footer {padding: 0px 0px 0px 20px}
+
+    /* ABOUT */
+
+    .about-skanonh div:first-of-type h2 {padding-left:30px;}
+
+    /* EXHIBITS */
+
+    .exhibit-gallery {flex-direction:column;}
+    .plan-your-visit-exhibit {flex-direction:column;}
+
+    /* EVENTS */
+
+    .skanonh-events .event {flex-direction:column;}
+    .skanonh-events div {flex:1; order:2; height:300px; width:100%;}
+    .skanonh-events h1 {padding-left:30px;}
+    .skanonh-events p {padding-left:30px;}
+
+}
+
+
+
+@media screen and (max-width:700px) {
+    .wrapper {flex-direction:column; }
+    nav {position:fixed; background-color:white; width:100%}
+    li {padding:8px;}
+    header {background-color:white;}
+
+    .plan-your-visit {width:100%; flex-direction:column; align-items:center;}
+    .plan-your-visit div {width:100%; height:100px; align-items:center;}
+    .plan-your-visit>div:last-of-type {align-items:left;}
+    .plan-your-visit>div h2 span {padding-left:0px;}
+
+    .featured-gallery {flex-direction:column;}
+    .featured .text { display:flex; flex-direction:column; opacity:.8;  position:absolute; background-color:white; justify-content:center; justify-content: flex-end;}
+
+    .what-is-skanonh {display:flex; flex-direction: column;}
+
+    footer {padding: 0px 10px 0px 10px;}
+    footer .hours h2 {font-size: 2.5em;}
+    footer .hours p{font-size:2em; line-height:.5em;}
+    footer .hours:nth-child(4) p {line-height:1em;}
+
+    /* ABOUT */
+
+    .about-skanonh {display:flex; flex-direction:column;}
+    .about-gallery {position:relative; display:flex; flex-direction:column;}
+
+
+    /* EXHIBITS */
+
+    /* EVENTS */
+
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

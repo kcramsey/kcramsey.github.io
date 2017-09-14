@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Native American Cultural Museum | About | Skanonh Great Law of Peace Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400i,800|Alegreya+Sans:300,400,400i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lazyYT.css">
+    <link rel="stylesheet" href="js/lazyYT.js">
+    
+  </head>
+
+  <body>
+		<div class="wrapper">
+      <header>
+        <h1 class="visuallyhidden">About the Skä•noñh Great Law of Peace Center</h1>
+          <nav>
+          <h1 class="visuallyhidden">Main Navigation</h1>
+            <ul>
+              <li><a href='index.html'><img src="img/skanonh-center-logo.png" alt="Skanonh Center Logo"></a></li>
+              <li><a href='events.html'>Events</a></li>
+              <li><a href='exhibits.html'>Exhibits</a></li>
+              <li><a href='about.html'>About</a></li>
+            </ul>
+          </nav>
+      </header>
+      
+      <main class="main">
+        <div class="hero-about">
+        </div>
+        
+          <section class="about-skanonh fade">
+            <h1 class="visuallyhidden">About the Skanonh Center</h1>
+
+            <div>
+              <h2><span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Peace<span>and</span><span>Wellness</span></h2>
+            </div>
+
+            <div>
+                <p>Skä•noñh, is an Onondaga welcoming greeting meaning “Peace and Wellness.”</p>
+                <p>The Skä•noñh – Great Law of Peace Center is a Haudenosaunee (Iroquois) Heritage Center focused on telling the story of the native peoples of central New York. The history is told through the lens of the Onondaga Nation and covers topics such as Creation, European Contact, The Great Law of Peace, and more. The Onondagas, or People of the Hills, are the keepers of the Central Fire and are the spiritual and political center of the Haudenosaune.</p>
+            </div>
+
+          </section>
+          
+          <section class="about-gallery fade">
+
+            <h1 class="visuallyhidden">Skanonh Center Gallery</h1>
+            
+            <div class="about about-one">
+              <div class="image"></div>
+            </div>
+
+            <div class="about about-two">
+              <div class="image"></div>
+            </div>
+
+            <div class="about about-three">
+              <div class="image"></div>
+            </div>
+
+          </section>
+      
+        <footer>
+          <h1 class="visuallyhidden">Footer</h1>
+
+          <div class="hours">
+            <h2>Skä•noñh Great Law of Peace Center</h2>
+              <p>W-F: 10AM - 4PM</p>
+              <p>SAT&SUN: 11am - 4PM</p>
+          </div>
+
+          <div class="hours">
+          <h2>Sainte Marie Mission Site (May-Oct)</h2>
+            <p>W-F: 10AM - 4PM</p>
+            <p>SAT&SUN: 11am - 4PM</p>
+          </div>
+
+          <div class="hours">
+          <h2>Address</h2>
+            <p>6680 Onondaga Lake Parkway</p>
+            <p>Liverpool, New York 13088</p>
+          </div>
+
+
+          <div class="social">
+            <a href="http://facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="http://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="http://linkedin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          
+          </div>
+
+
+          <div class="copyright">
+          <p>© 2017 Skanonh Great Law of Peace Center. All rights reserved.</p>
+          </div>
+
+        </footer>
+        </main>
+      </div>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/lazyYT.js"></script>
+        <script>
+        $( document ).ready(function() {
+            $('.js-lazyYT').lazyYT();
+        });
+
+
+    $(window).scroll( function(){
+    
+       
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 400;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},2000);
+                    
+            }
+        }); 
+    
+    });
+
+        </script>
+
+  </body>
+</html>

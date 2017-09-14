@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Native American Cultural Museum | Exhibits | Skanonh Great Law of Peace Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400i,800|Alegreya+Sans:400,400i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lazyYT.css">
+    <link rel="stylesheet" href="js/lazyYT.js">
+    
+  </head>
+
+  <body>
+		<div class="wrapper">
+      <header>
+        <h1 class="visuallyhidden">Exhibits at the Skä•noñh Great Law of Peace Center</h1>
+          <nav>
+          <h1 class="visuallyhidden">Main Navigation</h1>
+            <ul>
+              <li><a href='index.html'><img src="img/skanonh-center-logo.png" alt="Skanonh Center Logo"></a></li>
+              <li><a href='events.html'>Events</a></li>
+              <li><a href='exhibits.html'>Exhibits</a></li>
+              <li><a href='about.html'>About</a></li>
+            </ul>
+          </nav>
+      </header>
+      
+      <main class="main">
+        <div class="hero-exhibit">
+        </div>
+        
+        <section class="exhibit-gallery">
+          <h1 class="visuallyhidden">Exhibits</h1>
+          
+          <article class="exhibit exhibit-one fade">
+            <h2>Current Exhibits</h2>
+          </article>
+
+          <article class="exhibit exhibit-two fade">
+            <a href="/about"><div class="image"></div>
+            <div class="text">
+              <h1>Haudenosaunee Life Through Acrylic</h1>
+            </div></a>
+          </article>
+
+          <article class="exhibit exhibit-three fade">
+            <a href="/about"><div class="image"></div>
+            <div class="text">
+              <h1>Clothing and Culture</h1>
+            </div></a>
+          </article>
+
+          <article class="exhibit exhibit-four fade">
+            <a href="/about"><div class="image"></div>
+            <div class="text">
+              <h1>Beverly Doxtator: The Mask</h1>
+            </div></a>
+          </article>
+
+          <article class="exhibit exhibit-five fade">
+            <a href="/about"><div class="image"></div>
+            <div class="text">
+              <h1>American Advertising and the Iroquois</h1>
+            </div></a>
+          </article>
+
+          <article class="exhibit exhibit-six fade">
+            <a href="/about"><div class="image"></div>
+            <div class="text">
+              <h1>Artwork of the 18th Century</h1>
+            </div></a>
+          </article>
+
+        </section>
+
+      
+        <section class="plan-your-visit-exhibit fade">
+          <h1 class="visuallyhidden">Plan Your Visit</h1>
+
+          <div>
+            <h2><a href="#">Plan your <span>Visit<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span></a></h2>
+          </div>
+
+          <div>
+              <h2>See something interesting?</h2>
+          </div>
+
+        </section>
+
+
+        <footer>
+          <h1 class="visuallyhidden">Footer</h1>
+
+          <div class="hours">
+            <h2>Skä•noñh Great Law of Peace Center</h2>
+              <p>W-F: 10AM - 4PM</p>
+              <p>SAT&SUN: 11am - 4PM</p>
+          </div>
+
+          <div class="hours">
+          <h2>Sainte Marie Mission Site (May-Oct)</h2>
+            <p>W-F: 10AM - 4PM</p>
+            <p>SAT&SUN: 11am - 4PM</p>
+          </div>
+
+          <div class="hours">
+          <h2>Address</h2>
+            <p>6680 Onondaga Lake Parkway</p>
+            <p>Liverpool, New York 13088</p>
+          </div>
+
+
+          <div class="social">
+            <a href="http://facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="http://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="http://linkedin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          
+          </div>
+
+
+          <div class="copyright">
+          <p>© 2017 Skanonh Great Law of Peace Center. All rights reserved.</p>
+          </div>
+
+        </footer>
+        </main>
+      </div>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/lazyYT.js"></script>
+        <script>
+        $( document ).ready(function() {
+            $('.js-lazyYT').lazyYT();
+        });
+
+
+    $(window).scroll( function(){
+    
+       
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 400;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},2000);
+                    
+            }
+        }); 
+    
+    }); 
+
+        </script>
+
+  </body>
+</html>
